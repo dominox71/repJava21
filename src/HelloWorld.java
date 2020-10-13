@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HelloWorld {
@@ -25,6 +26,19 @@ public class HelloWorld {
         line = sc.nextLine();
         double dd = Double.parseDouble(line);
         System.out.println(dd);
+        int[] tablica = new int[10];
+        System.out.println(tablica);
+        for(int i=0;i<tablica.length; i++){
+            System.out.println(i+ "" + tablica[i]+ " ");
+        }
+        tablica[1]= 123;
+        System.out.println(Arrays.toString(tablica));
+        String[] tabString = new String[5];
+        tabString[0] = "jeden";
+        System.out.println(Arrays.toString(tabString));
+        int[] tab2 = {1,2,3,4};
+        System.out.println(Arrays.toString(tab2));
+
 
     }
 }
