@@ -42,6 +42,12 @@ public class zajecia1 {
         System.out.println( "Płeć: " + plec);
         System.out.println("Wiek: " + wiek);
 
+        int poczatek = -1000;
+        int koniec = 1001;
+        for ( int i = poczatek; i<= koniec; i+= 3){
+            System.out.println(i);
+        }
+
 
     }
 }
