@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 import java.lang.Math;
 public class zajecia1 {
     public static void main (String [] args) {
