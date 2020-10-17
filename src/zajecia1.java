@@ -84,28 +84,19 @@ public class zajecia1 {
         System.out.println("Aby wyjść wciśnij q");
         char operacja;
         operacja = sc.nextLine().charAt(0);
-        switch (operacja)
-        {
-            case '+': {
-                System.out.println(liczba_1 + liczba_2);
-                break;
-            }
-            case '-':
-                System.out.println(liczba_1 - liczba_2);
-                break;
-            case '*': {
-                System.out.println(liczba_1 * liczba_2);
-                break;
-            }
-            case '/':
-            {
-                if (liczba_2 !=0){
+        switch (operacja) {
+            case '+' -> System.out.println(liczba_1 + liczba_2);
+            case '-' -> System.out.println(liczba_1 - liczba_2);
+            case '*' -> System.out.println(liczba_1 * liczba_2);
+            case 'q' -> System.out.println("Do widzenia !");
+            case '/' -> {
+                if (liczba_2 != 0) {
                     System.out.println(liczba_1 / liczba_2);
-                }
-                else{
+                } else {
                     System.out.println("Dzielenie przez zero jest niepoprawne!");
                 }
             }
+            default -> throw new IllegalStateException("Nieznana operacja: " + operacja);
         }
 
     }
