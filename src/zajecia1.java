@@ -56,6 +56,7 @@ public class zajecia1 {
         }
 
         //Zadanie 5
+
         System.out.println("podaj pierwszą liczbę");
         line = sc.nextLine();
         int a = Integer.parseInt(line);
