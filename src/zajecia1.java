@@ -73,10 +73,10 @@ public class zajecia1 {
 
         System.out.println("Podaj pierwszą liczbę");
         line = sc.nextLine();
-        int liczba_1 = Integer.parseInt(line);
+        double liczba_1 = Double.parseDouble(line);
         System.out.println("podaj drugą liczbę");
         line = sc.nextLine();
-        int liczba_2 = Integer.parseInt(line);
+        double liczba_2 = Double.parseDouble(line);
         System.out.println("Dodawanie - wciśnij +");
         System.out.println("Odejmowanie - wciśnij -");
         System.out.println("Mnożenie - wciśnij *");
