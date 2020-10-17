@@ -1,13 +1,13 @@
-import java.util.Scanner;
+import java.util.*;
 import java.lang.Math;
 public class zajecia1 {
-    public static void main (String [] args){
+    public static void main (String [] args) {
 
         //Zadanie 2
 
         Scanner sc = new Scanner(System.in);
         System.out.println("podaj string");
-        String line= sc.nextLine();
+        String line = sc.nextLine();
         System.out.println("Wyświetlam string: " + line);
 
         System.out.println("podaj int");
@@ -28,7 +28,7 @@ public class zajecia1 {
         //Zadanie 3
 
         System.out.println("podaj imię");
-        String imie= sc.nextLine();
+        String imie = sc.nextLine();
 
         System.out.println("podaj nazwisko");
         String nazwisko = sc.nextLine();
@@ -44,14 +44,14 @@ public class zajecia1 {
         System.out.println("Wyświetlam Twoje dane: ");
         System.out.println("Imię: " + imie);
         System.out.println("Nazwisko: " + nazwisko);
-        System.out.println( "Płeć: " + plec);
+        System.out.println("Płeć: " + plec);
         System.out.println("Wiek: " + wiek);
 
         //Zadanie 4
 
         int poczatek = -1000;
         int koniec = 1001;
-        for ( int i = poczatek; i<= koniec; i+= 3){
+        for (int i = poczatek; i <= koniec; i += 3) {
             System.out.println(i);
         }
 
@@ -67,7 +67,7 @@ public class zajecia1 {
         System.out.println("podaj trzecią liczbę");
         line = sc.nextLine();
         int c = Integer.parseInt(line);
-        System.out.println(Math.max(a, Math.max(b,c)));
+        System.out.println(Math.max(a, Math.max(b, c)));
 
         //Zadanie 6
 
@@ -99,5 +99,19 @@ public class zajecia1 {
             default -> throw new IllegalStateException("Nieznana operacja: " + operacja);
         }
 
+        //Zadanie 7
+
+        System.out.println("Podaj pierwszą liczbę");
+        int x = sc.nextInt();
+        System.out.println("Podaj drugą liczbę");
+        int y = sc.nextInt();
+
+        int z;
+        while(y!=0){
+            z = x % y;
+            x = y;
+            y = z;
+        }
+        System.out.println("Największy wspólny dzielnik " + x + " i " + y + " wynosi: " + x);
     }
 }
