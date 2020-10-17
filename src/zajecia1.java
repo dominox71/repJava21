@@ -1,7 +1,10 @@
 import java.util.Scanner;
+import java.lang.Math;
 public class zajecia1 {
     public static void main (String [] args){
-//Zadanie 1
+
+        //Zadanie 2
+
         Scanner sc = new Scanner(System.in);
         System.out.println("podaj string");
         String line= sc.nextLine();
@@ -21,7 +24,9 @@ public class zajecia1 {
         line = sc.nextLine();
         double zmienno = Double.parseDouble(line);
         System.out.println("wyświetlam liczbę zmiennoprzecinkową: " + zmienno);
-//Zadanie 2
+
+        //Zadanie 3
+
         System.out.println("podaj imię");
         String imie= sc.nextLine();
 
@@ -42,12 +47,66 @@ public class zajecia1 {
         System.out.println( "Płeć: " + plec);
         System.out.println("Wiek: " + wiek);
 
+        //Zadanie 4
+
         int poczatek = -1000;
         int koniec = 1001;
         for ( int i = poczatek; i<= koniec; i+= 3){
             System.out.println(i);
         }
 
+        //Zadanie 5
+        System.out.println("podaj pierwszą liczbę");
+        line = sc.nextLine();
+        int a = Integer.parseInt(line);
+
+        System.out.println("podaj drugą liczbę");
+        line = sc.nextLine();
+        int b = Integer.parseInt(line);
+
+        System.out.println("podaj trzecią liczbę");
+        line = sc.nextLine();
+        int c = Integer.parseInt(line);
+        System.out.println(Math.max(a, Math.max(b,c)));
+
+        //Zadanie 6
+
+        System.out.println("Podaj pierwszą liczbę");
+        line = sc.nextLine();
+        int liczba_1 = Integer.parseInt(line);
+        System.out.println("podaj drugą liczbę");
+        line = sc.nextLine();
+        int liczba_2 = Integer.parseInt(line);
+        System.out.println("Dodawanie - wciśnij +");
+        System.out.println("Odejmowanie - wciśnij -");
+        System.out.println("Mnożenie - wciśnij *");
+        System.out.println("Dzielenie - wciśnij /");
+        System.out.println("Aby wyjść wciśnij q");
+        char operacja;
+        operacja = sc.nextLine().charAt(0);
+        switch (operacja)
+        {
+            case '+': {
+                System.out.println(liczba_1 + liczba_2);
+                break;
+            }
+            case '-':
+                System.out.println(liczba_1 - liczba_2);
+                break;
+            case '*': {
+                System.out.println(liczba_1 * liczba_2);
+                break;
+            }
+            case '/':
+            {
+                if (liczba_2 !=0){
+                    System.out.println(liczba_1 / liczba_2);
+                }
+                else{
+                    System.out.println("Dzielenie przez zero jest niepoprawne!");
+                }
+            }
+        }
 
     }
 }
