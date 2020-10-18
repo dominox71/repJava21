@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.Scanner;
 import java.lang.Math;
 public class zajecia1 {
@@ -114,5 +115,29 @@ public class zajecia1 {
             y = z;
         }
         System.out.println("Największy wspólny dzielnik " + x + " i " + y + " wynosi: " + x);
+
+        //Zadanie 8
+
+
+        System.out.println("Podaj liczbe elementow tablicy");
+            int n = sc.nextInt();
+        int[] k = new int[n];
+            for (int i=0; i<n; i++) {
+                System.out.println("Podaj element k[" + i +"]");
+                k[i] = sc.nextInt();
+            }
+            System.out.println("Podaj element do wyszukania");
+            int j = sc.nextInt();
+
+            for (int i=0; i<n; i++) {
+                if (k[i] == j) {
+                    System.out.println("Odnaleziono element "+j+" pod indeksem "+i);
+                    return;
+                }
+            }
+
+            System.out.println("Nie odnaleziono elementu "+j);
+
+
     }
 }
