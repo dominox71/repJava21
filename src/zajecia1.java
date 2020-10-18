@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.Scanner;
 import java.lang.Math;
 public class zajecia1 {
